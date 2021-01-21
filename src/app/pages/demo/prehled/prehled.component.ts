@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { NgModule, Component, Pipe, PipeTransform, enableProdMode, OnInit } from '@angular/core';
+import {PrehledService} from './prehled.service';
 
 @Component({
   selector: 'app-prehled',
   templateUrl: './prehled.component.html',
   styleUrls: ['./prehled.component.scss']
 })
-export class PrehledComponent implements OnInit {
+export class PrehledComponent {
 
-  constructor() { }
+  dataSource: any;
 
-  ngOnInit(): void {
+  constructor(service: PrehledService) {
+    this.dataSource = service.getDataSource();
   }
 
 }

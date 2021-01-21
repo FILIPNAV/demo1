@@ -23,6 +23,13 @@ import { AsideDynamicComponent } from './_layout/components/aside-dynamic/aside-
 import { HeaderMenuDynamicComponent } from './_layout/components/header/header-menu-dynamic/header-menu-dynamic.component';
 import { PrehledComponent } from './demo/prehled/prehled.component';
 import { FormularComponent } from './demo/formular/formular.component';
+import { DxDataGridModule,
+  DxBulletModule,
+  DxTemplateModule,
+  DxCheckBoxModule,
+  DxSelectBoxModule,
+  DxNumberBoxModule,
+  DxFormModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -50,6 +57,13 @@ import { FormularComponent } from './demo/formular/formular.component';
     NgbProgressbarModule,
     CoreModule,
     SubheaderModule,
+    DxDataGridModule,
+    DxTemplateModule,
+    DxBulletModule,
+    DxCheckBoxModule,
+    DxSelectBoxModule,
+    DxNumberBoxModule,
+    DxFormModule
   ],
 })
 export class LayoutModule { }
