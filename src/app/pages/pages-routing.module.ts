@@ -10,6 +10,23 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
+        path: 'servisni-listy',
+        children: [
+          {
+            path: '',
+            redirectTo: 'prehled'
+          },
+          {
+            path: 'prehled',
+            component: PrehledComponent
+          },
+          {
+            path: 'formular',
+            component: FormularComponent
+          },
+        ]
+      },
+      {
         path: 'dashboard',
         loadChildren: () =>
           import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
