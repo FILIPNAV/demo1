@@ -23,13 +23,16 @@ import { AsideDynamicComponent } from './_layout/components/aside-dynamic/aside-
 import { HeaderMenuDynamicComponent } from './_layout/components/header/header-menu-dynamic/header-menu-dynamic.component';
 import { PrehledComponent } from './demo/prehled/prehled.component';
 import { FormularComponent } from './demo/formular/formular.component';
-import { DxDataGridModule,
+import {
+  DxDataGridModule,
   DxBulletModule,
   DxTemplateModule,
   DxCheckBoxModule,
   DxSelectBoxModule,
   DxNumberBoxModule,
-  DxFormModule } from 'devextreme-angular';
+  DxFormModule, DxButtonModule, DxButtonGroupModule, DxAutocompleteModule
+} from 'devextreme-angular';
+import { UiComponent } from './demo/ui/ui.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,7 @@ import { DxDataGridModule,
     HeaderMenuDynamicComponent,
     PrehledComponent,
     FormularComponent,
+    UiComponent,
   ],
   imports: [
     CommonModule,
@@ -63,6 +67,14 @@ import { DxDataGridModule,
     DxCheckBoxModule,
     DxSelectBoxModule,
     DxNumberBoxModule,
+    DxFormModule,
+      DxButtonModule,
+      DxButtonGroupModule,
+    DxCheckBoxModule,
+    DxSelectBoxModule,
+    DxNumberBoxModule,
+    DxButtonModule,
+    DxAutocompleteModule,
     DxFormModule
   ],
 })

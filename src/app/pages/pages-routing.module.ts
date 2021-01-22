@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './_layout/layout.component';
 import {PrehledComponent} from './demo/prehled/prehled.component';
 import {FormularComponent} from './demo/formular/formular.component';
+import {UiComponent} from './demo/ui/ui.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
           {
             path: 'formular',
             component: FormularComponent
+          },
+          {
+            path: 'ui',
+            component: UiComponent
           },
         ]
       },
